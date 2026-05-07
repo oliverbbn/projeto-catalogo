@@ -25,3 +25,12 @@ echo "<br>";
 foreach ($filme as $chave => $valor) {
     echo "<strong>".$chave."</strong>".";".$valor."<br>";
 }
+
+echo "<br>";
+
+foreach ($filme as $chave => $valor) {
+    $rotulo = str_replace("_","",$chave);
+    $rotulo = ucwords($rotulo);
+
+    echo "<strong>{$rotulo}:</strong> {$valor} <br>";
+}
