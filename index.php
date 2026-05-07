@@ -19,11 +19,20 @@ $catalogo = [
         "ano" => 2016
     ],
 ];
+?>
+<!DOCTYPE html>
+    <html lang="pt-BR">
+        <meta charset="UFT-8">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+        <title>Projeto Integrador</title>
+    <head>
 
-echo $catalogo[0]["titulo"]."<br>";
-echo $catalogo[1]["genero"]."<br>";
-echo "<br>";
-echo $catalogo[2]["titulo"]."<br>";
-echo $catalogo[0]["ano"]."<br>";
 
+<?php
+foreach ($catalogo as $filme) {
+    echo "<h3>".$filme["titulo"]."</h3><br>";
+    echo "<div class=text-secondary>"."Gênero: ".$filme["genero"]."</div>";
+    echo "Ano: ".$filme["ano"]."<br><br>";
+}
 
+?>
