@@ -19,3 +19,11 @@ $catalogo = [
         "ano" => 2016
     ],
 ];
+
+echo $catalogo[0]["titulo"]."<br>";
+echo $catalogo[1]["genero"]."<br>";
+echo "<br>";
+echo $catalogo[2]["titulo"]."<br>";
+echo $catalogo[0]["ano"]."<br>";
+
+
