@@ -19,3 +19,9 @@ if (isset($filme["diretor"],$filme["nota_imdb"])){
     echo $filme["diretor"]."<br>";
     echo $filme["nota_imdb"]."<br>";
 }
+
+echo "<br>";
+
+foreach ($filme as $chave => $valor) {
+    echo "<strong>".$chave."</strong>".";".$valor."<br>";
+}
