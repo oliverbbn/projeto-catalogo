@@ -1,5 +1,12 @@
 <?php
-$usuario = ["Joao", 25, "joao@email.com"];
-echo $usuario[0]."<br>";
-echo $usuario[1]."<br>";
-echo $usuario[2]."<br>";
+$usuario = [
+    "nome" =>"Joao",
+    "idade" =>25,
+    "email" =>"joao@email.com",
+    "cidade" => "Resende"
+    ];
+
+echo $usuario["nome"]."<br>";
+echo $usuario["idade"]."<br>";
+echo $usuario["email"]."<br>";
+echo $usuario["cidade"]."<br>";
