@@ -1,12 +1,15 @@
 <?php
-$usuario = [
-    "nome" =>"Joao",
-    "idade" =>25,
-    "email" =>"joao@email.com",
-    "cidade" => "Resende"
-    ];
+$filme = [
+    "id" => 1,
+    "titulo" => "Oppenheimer",
+    "diretor" => "Cristopher Nolan",
+    "ano_lancamento" => 2023,
+    "nota_imdb" => 8.4,
+    "genero" => "Drama"
+];
 
-echo $usuario["nome"]."<br>";
-echo $usuario["idade"]."<br>";
-echo $usuario["email"]."<br>";
-echo $usuario["cidade"]."<br>";
+echo "<h2>".$filme["titulo"]."</h2>";
+echo "Diretor: ".$filme["diretor"]."<br>";
+echo "Ano: ".$filme["ano_lancamento"]."<br>";
+echo "Nota: ".$filme["nota_imdb"]."<br>";
+echo "Genero: ".$filme["genero"]."<br>";
